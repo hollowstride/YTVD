@@ -11,11 +11,9 @@ A modern, sleek GUI-based YouTube Video Downloader built using Python, `CustomTk
 
 ---
 
-## ⭐ Support
+## 🎨 Credits
 
-If you find YTVD useful, consider giving the repository a ⭐ on GitHub!
-
-**Made with 💗 using Python, CustomTkinter, and yt-dlp.**
+Video camera play Icon by 3Dicons on [Icon-Icons.com](https://icon-icons.com/authors/1320-3dicons)
 
 ---
 
