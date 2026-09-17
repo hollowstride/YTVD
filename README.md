@@ -11,6 +11,14 @@ A modern, sleek GUI-based YouTube Video Downloader built using Python, `CustomTk
 
 ---
 
+## ⭐ Support
+
+If you find YTVD useful, consider giving the repository a ⭐ on GitHub!
+
+**Made with 💗 using Python, CustomTkinter, and yt-dlp.**
+
+---
+
 ## Features
 
 - **Standalone Setup:** Automatic dependency checks—no Python or FFmpeg manual setup required when using the `.exe` installer.
