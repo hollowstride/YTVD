@@ -3,13 +3,17 @@
 A modern, sleek GUI-based YouTube Video Downloader built using Python, `CustomTkinter`, and `yt-dlp`.
 
 > **Note for Non-Python Users:**  
-> If you don't have Python installed and want a standalone Windows executable (`.exe`), download the compiled version here: **[INSERT LINK HERE]**
+> If you don't have Python installed and want a standalone Windows executable (`.exe`), download the compiled installer here:
+>
+> 📥 **[Download YTVD Setup (v2.0.0)](https://github.com/hollowstride/YTVD/releases/download/v2.0.0/YTVD_Setup.exe)**
 
 > **Disclaimer:** This application is strictly designed and tested **only for Windows OS**.
 
 ---
 
 ## Features
+
+- **Standalone Setup:** Automatic dependency checks—no Python or FFmpeg manual setup required when using the `.exe` installer.
 - **Modern Dark UI:** Responsive interface powered by `CustomTkinter`.
 - **Non-Blocking GUI:** Uses background threading for smooth downloading without UI freezing.
 - **Real-Time Progress:** Live progress bar and status updates.
@@ -19,27 +23,33 @@ A modern, sleek GUI-based YouTube Video Downloader built using Python, `CustomTk
 
 ---
 
-## Requirements
+## Requirements (Source Code Only)
+
+*If you are running the pre-compiled installer (`YTVD_Setup.exe`), you can skip this section.*
 
 - **Windows OS**
 - **Python 3.8+**
 - **FFmpeg** (Required for merging video & audio streams)
 
 ### Installing Python Dependencies
+
 ```bash
 pip install customtkinter yt-dlp
 ```
 
-### Installing FFmpeg (Required)
+### Installing FFmpeg (Required for running from source)
+
 Install via Windows Command Prompt:
+
 ```cmd
 winget install FFmpeg
 ```
-*(Make sure `ffmpeg` is added to your System PATH).*
+
+Make sure `ffmpeg` is added to your system `PATH`.
 
 ---
 
-## How to Run
+## How to Run from Source
 
 ```bash
 python main.py
@@ -47,4 +57,11 @@ python main.py
 
 1. Paste your YouTube video link.
 2. Select your preferred resolution.
-3. Click **Start Download**. Your file will be saved in your **Downloads** folder.
+3. Click **Start Download**.
+4. Your file will be saved to your **Downloads** folder.
+
+---
+
+## License
+
+Use and distribute this project according to the license included in the repository.
