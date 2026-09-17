@@ -1,23 +1,50 @@
-# YTVD
+# YTVD (YouTube Video Downloader)
 
-A simple GUI-based YouTube Video Downloader built using Python's `tkinter` and `yt-dlp`. It allows users to download YouTube videos in different resolutions.
+A modern, sleek GUI-based YouTube Video Downloader built using Python, `CustomTkinter`, and `yt-dlp`.
+
+> **Note for Non-Python Users:**  
+> If you don't have Python installed and want a standalone Windows executable (`.exe`), download the compiled version here: **[INSERT LINK HERE]**
+
+> **Disclaimer:** This application is strictly designed and tested **only for Windows OS**.
+
+---
 
 ## Features
-- Download YouTube videos easily using a graphical user interface.
-- Select from multiple quality options: `Highest`, `1080p`, `720p`, and `480p`.
-- Downloads are saved automatically to the user's `Downloads` folder.
-- Uses `yt-dlp` for efficient downloading and format conversion.
+- **Modern Dark UI:** Responsive interface powered by `CustomTkinter`.
+- **Non-Blocking GUI:** Uses background threading for smooth downloading without UI freezing.
+- **Real-Time Progress:** Live progress bar and status updates.
+- **Quality Options:** Select between `Highest`, `1080p`, `720p`, and `480p`.
+- **Auto-MP4 Remux:** Automatically merges audio and video into `.mp4`.
+- **Direct Save:** Downloads are automatically saved to your system's `Downloads` folder.
+
+---
 
 ## Requirements
-Make sure you have the following dependencies installed and updated before running the script:
 
-- Python 3.x
-- `tkinter` (usually included with Python)
-- `yt-dlp`
-- `ffmpeg` (for merging audio and video)
+- **Windows OS**
+- **Python 3.8+**
+- **FFmpeg** (Required for merging video & audio streams)
 
-### Installing Dependencies
-To install `yt-dlp` and `ffmpeg`:
+### Installing Python Dependencies
+```bash
+pip install customtkinter yt-dlp
+```
+
+### Installing FFmpeg (Required)
+Install via Windows Command Prompt:
+```cmd
+winget install FFmpeg
+```
+*(Make sure `ffmpeg` is added to your System PATH).*
+
+---
+
+## How to Run
 
 ```bash
-pip install yt-dlp
+python main.py
+```
+
+1. Paste your YouTube video link.
+2. Select your preferred resolution.
+3. Click **Start Download**. Your file will be saved in your **Downloads** folder.
